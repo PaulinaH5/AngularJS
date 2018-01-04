@@ -45,7 +45,7 @@ export class EdycjaComponent implements OnInit {
       }
     );
 
-    this.http.get("http://localhost:55555/ksiazka").subscribe
+    this.http.get("http://localhost:5555/ksiazka").subscribe
     (
       (res: Response) =>
       {

@@ -1,10 +1,8 @@
-<a routerLink = "/"> powrót</a>
-<h2>
-  Edytuj książkę
-</h2>
+<h2>  Edytuj książkę </h2>
 <form id = "formNowaKsiazka" name = "formNowaKsiazka" #ksiazkaData = "ngForm" (ngSubmit) ="edytujKsiazke(ksiazkaData.value)" >
 <label>Tytul</label> <input type="text" name="tytul" id="tytul" placeholder = "Tytuł książki" [(ngModel)] = "data.tytul" ngModel><br>
-<input type="submit" value="Edytuj Ksiazke">
+  <input type="submit" value="Edytuj Ksiazke" class="btn btn-success">
+  <button type="button" class="btn btn-info" routerLink = "/ogladaj">Powrót</button>
 </form>
 
 <p *ngIf = "!exist">

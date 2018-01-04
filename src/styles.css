@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: bisque;
+    line-height: 1;
+    color: #585858;
+    padding: 22px 10px;
+    padding-bottom: 55px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto;
+    font-size: 1.2em;
+    border: 2px solid gray;
+}
+
+h1 {
+    font-family: 'Amarante', Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 3.6em;
+    line-height: 1.7em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+thead {
+    cursor: pointer;
+    background: #c9dff0;
+}
+
+th {
+    font-weight: bold;
+    padding: 12px 30px;
+}
+
+td{
+    padding: 5px;
+}
+
+tr:hover{
+   background-color: darksalmon;
+}
+
+.btn-info{
+    background-color: cornflowerblue;
+    border-color: cornflowerblue;
+}
+
+.btn-info:hover {
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+}
+
+.btn{
+    margin: 20px auto;
+}
+
+.btn-success{
+    background-color: yellowgreen;
+    border-color: yellowgreen;
+}
+
+.btn-success:hover{
+    background-color: lightgreen;
+    border-color: lightgreen;
+}
+
+#buttonStart button{
+    display: block;
+}
+
+.mouse{
+    cursor: pointer;
+}

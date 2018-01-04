@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { DodajComponent } from './dodaj/dodaj.component';
 import { EdycjaComponent } from './edycja/edycja.component';
+import { StartComponent } from './start/start.component';
 
 
 
@@ -16,7 +17,8 @@ import { EdycjaComponent } from './edycja/edycja.component';
     AppComponent,
     HomeComponent,
     DodajComponent,
-    EdycjaComponent
+    EdycjaComponent,
+    StartComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,10 @@ import { EdycjaComponent } from './edycja/edycja.component';
       HttpModule,
       RouterModule.forRoot([
           {
-            path: "",  component: HomeComponent
+            path: "",  component: StartComponent
+          },
+          {
+              path: "ogladaj",  component: HomeComponent
           },
           {
             path: "dodaj",  component: DodajComponent

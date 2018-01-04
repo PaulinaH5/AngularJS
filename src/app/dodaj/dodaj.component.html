@@ -1,10 +1,10 @@
-<a routerLink = "/">powrót</a>
 <h2>
   Dodaj nową książkę
 </h2>
 <form id = "formNowaKsiazka" name = "formNowaKsiazka" #ksiazkaData = "ngForm" (ngSubmit) ="dodajKsiazke(ksiazkaData.value)" >
 <label>Tytul</label> <input type="text" name="tytul" id="tytul" placeholder = "Tytuł książki" ngModel><br>
-<input type="submit" value="Dodaj Ksiazke">
+<input type="submit" value="Dodaj Ksiazke" class="btn btn-success">
+<button type="button" class="btn btn-info" routerLink = "/">Powrót</button>
 </form>
 
 <br><br>

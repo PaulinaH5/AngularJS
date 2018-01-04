@@ -1,21 +1,19 @@
-
-<a routerLink = '/dodaj'>Dodaj nowa książkę</a>
-
-<p>
-  Książki
-</p>
 <table>
-
-  <th>ID</th>
-  <th>Tytuł</th>
-  <th></th>
-  <th></th>
-
-  <tr *ngFor = "let book of ksiazka">
-      <td>{{book.id}}</td>
-      <td>{{book.tytul}}</td>
-      <td [routerLink] = "['/edycja',book.id]"><a>Edytuj</a></td>
-      <td (click) = "usun(book.id)"><a>Usun</a></td>
-  </tr>
+  <thead>
+      <th>ID</th>
+      <th>Tytuł</th>
+      <th>Edytuj</th>
+      <th>Usuń</th>
+  </thead>
+  <tbody>
+      <tr *ngFor = "let book of ksiazka">
+          <td>{{book.id}}</td>
+          <td>{{book.tytul}}</td>
+          <td [routerLink] = "['/edycja',book.id]"><a class="mouse">o</a></td>
+          <td (click) = "usun(book.id)"><a class="mouse">X</a></td>
+      </tr>
+  </tbody>
 
 </table>
+
+<button type="button" class="btn btn-info" routerLink = "/">Powrót</button>

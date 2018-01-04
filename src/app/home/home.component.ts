@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
           this.ksiazka = res.json();
         }
       )
-    }
+    };
 
   usun = function(id) {
       if (confirm("Czy na pewno chcesz usunąć?")) {
@@ -36,11 +36,11 @@ export class HomeComponent implements OnInit {
                   this.fetchData();
               })
       }
-  }
+  };
 
   ngOnInit()
   {
     this.fetchData();
-  }
+  };
 
 }

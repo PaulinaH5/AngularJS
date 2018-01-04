@@ -9,16 +9,12 @@
       "tytul": "dwa"
     },
     {
-      "id": 3,
-      "tytul": "trzy"
+      "tytul": "trzy2",
+      "id": 3
     },
     {
       "tytul": "Angular",
       "id": 4
-    },
-    {
-      "tytul": "kot",
-      "id": 5
     }
   ]
 }
