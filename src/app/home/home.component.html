@@ -11,11 +11,11 @@
   <th></th>
   <th></th>
 
-  <tr *ngFor = "let ksiazki of ksiazka">
-      <td>{{ksiazki.id}}</td>
-      <td>{{ksiazki.tytul}}</td>
-      <td [routerLink] = "['/edycja',ksiazki.id]"><a>Edytuj</a></td>
-      <td (click) = "usunKsiazke(ksiazki.id)"><a>Usun</a></td>
+  <tr *ngFor = "let book of ksiazka">
+      <td>{{book.id}}</td>
+      <td>{{book.tytul}}</td>
+      <td [routerLink] = "['/edycja',book.id]"><a>Edytuj</a></td>
+      <td (click) = "usun(book.id)"><a>Usun</a></td>
   </tr>
 
 </table>

@@ -16,9 +16,10 @@ export class HomeComponent implements OnInit {
 
   private headers = new Headers({ 'Content-Type': 'application/json'});
 
+
   fetchData = function()
     {
-      this.http.get("http://localhost:55555/ksiazka").subscribe
+      this.http.get("http://localhost:5555/ksiazka").subscribe
       (
         (res: Response) =>
         {
@@ -27,15 +28,15 @@ export class HomeComponent implements OnInit {
       )
     }
 
-    usunKsiazke = function(id) {
-      if(confirm("Czy jestes pewny?")) {
-        const url = `${"http://localhost:5555/ksiazka"}/${id}`;
-        return this.http.delete(url, {headers: this.headers}).toPromise()
-        .then(() => {
-        this.fetchData();
-        })
+  usun = function(id) {
+      if (confirm("Czy na pewno chcesz usunąć?")) {
+          const url = `${"http://localhost:5555/ksiazka"}/${id}`;
+          return this.http.delete(url, {headers: this.headers}).toPromise()
+              .then(() => {
+                  this.fetchData();
+              })
       }
-    }
+  }
 
   ngOnInit()
   {
