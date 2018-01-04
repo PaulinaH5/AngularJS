@@ -1,0 +1,24 @@
+{
+  "ksiazka": [
+    {
+      "id": 1,
+      "tytul": "raz"
+    },
+    {
+      "id": 2,
+      "tytul": "dwa"
+    },
+    {
+      "id": 3,
+      "tytul": "trzy"
+    },
+    {
+      "tytul": "Angular",
+      "id": 4
+    },
+    {
+      "tytul": "kot",
+      "id": 5
+    }
+  ]
+}
