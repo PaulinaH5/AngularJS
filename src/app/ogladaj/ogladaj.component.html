@@ -1,0 +1,27 @@
+<table>
+  <thead>
+  <th>ID</th>
+  <th>Tytuł</th>
+  <th>Autor</th>
+  <th>Kategoria</th>
+  <th>Edytuj</th>
+
+  </thead>
+  <tbody>
+  <tr >
+    <td>{{ data.id }}</td>
+    <td>{{ data.tytul }}</td>
+    <td>{{ data.autor }}</td>
+    <td>{{ data.kategoria }}</td>
+    <td [routerLink] = "['/edycja',data.id]"><a class="mouse fa fa-pencil-square-o"></a></td>
+
+  </tr>
+  </tbody>
+
+</table>
+
+<button type="button" class="btn btn-info" routerLink = "/wszystkie">Powrót</button>
+
+<p *ngIf = "!exist">
+  Książka o podanym id nie istnieje.
+</p>

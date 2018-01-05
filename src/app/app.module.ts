@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { DodajComponent } from './dodaj/dodaj.component';
 import { EdycjaComponent } from './edycja/edycja.component';
 import { StartComponent } from './start/start.component';
+import { OgladajComponent } from './ogladaj/ogladaj.component';
 
 
 
@@ -19,6 +20,7 @@ import { StartComponent } from './start/start.component';
     DodajComponent,
     EdycjaComponent,
     StartComponent,
+    OgladajComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,13 +31,16 @@ import { StartComponent } from './start/start.component';
             path: "",  component: StartComponent
           },
           {
-              path: "ogladaj",  component: HomeComponent
+              path: "wszystkie",  component: HomeComponent
           },
           {
             path: "dodaj",  component: DodajComponent
           },
           {
             path: "edycja/:id",  component: EdycjaComponent
+          },
+          {
+              path: "ksiazka/:id",  component: OgladajComponent
           }
           
       ])

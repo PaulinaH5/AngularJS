@@ -17,6 +17,7 @@ export class EdycjaComponent implements OnInit {
   ksiazkaObj:object = {};
   exist = false;
   private headers = new Headers({ 'Content-Type': 'application/json'});
+  confirmationString:string = "Pomyślnie edytowano ksiązkę";
   
   constructor(private router: Router, private route:ActivatedRoute, private http: Http) { }
 

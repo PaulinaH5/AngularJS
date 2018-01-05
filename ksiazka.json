@@ -13,16 +13,10 @@
       "kategoria": "kryminal"
     },
     {
-      "id": 3,
       "tytul": "Nieodnaleziona ",
       "autor": "Mróz Remigiusz",
-      "kategoria": "kryminal"
-    },
-    {
-      "id": 4,
-      "tytul": "Mleko i miód ",
-      "autor": "Kaur Rupi",
-      "kategoria": "poezja"
+      "kategoria": "kryminał",
+      "id": 3
     }
   ]
 }
