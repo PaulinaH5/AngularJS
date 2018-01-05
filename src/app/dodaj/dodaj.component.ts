@@ -17,13 +17,16 @@ export class DodajComponent implements OnInit {
   dodajKsiazke = function(ksiazka)
   {
     this.ksiazkaObj = {
-      "tytul": ksiazka.tytul
-    }
+      "tytul": ksiazka.tytul,
+      "autor": ksiazka.autor,
+      "kategoria": ksiazka.kategoria
 
-    this.http.post("http://localhost:55555/ksiazka",this.ksiazkaObj).subscribe((res:Response) =>{
+    };
+
+    this.http.post("http://localhost:5555/ksiazka",this.ksiazkaObj).subscribe((res:Response) =>{
      this.isAdded = true;
     })
-  }
+  };
 
   ngOnInit() {
   }

@@ -1,20 +1,28 @@
 {
   "ksiazka": [
     {
-      "id": 1,
-      "tytul": "raz"
+      "tytul": "Wielki ogarniacz życia, czyli jak być szczęśliwym nie robiąc niczego",
+      "autor": "Pani Bukowa",
+      "kategoria": "psychologia",
+      "id": 1
     },
     {
       "id": 2,
-      "tytul": "dwa"
+      "tytul": "W domu",
+      "autor": "Coben Harlan",
+      "kategoria": "kryminal"
     },
     {
-      "tytul": "trzy2",
-      "id": 3
+      "id": 3,
+      "tytul": "Nieodnaleziona ",
+      "autor": "Mróz Remigiusz",
+      "kategoria": "kryminal"
     },
     {
-      "tytul": "Angular",
-      "id": 4
+      "id": 4,
+      "tytul": "Mleko i miód ",
+      "autor": "Kaur Rupi",
+      "kategoria": "poezja"
     }
   ]
 }

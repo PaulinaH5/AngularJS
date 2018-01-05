@@ -2,6 +2,8 @@
   <thead>
       <th>ID</th>
       <th>Tytuł</th>
+      <th>Autor</th>
+      <th>Kategoria</th>
       <th>Edytuj</th>
       <th>Usuń</th>
   </thead>
@@ -9,6 +11,8 @@
       <tr *ngFor = "let book of ksiazka">
           <td>{{book.id}}</td>
           <td>{{book.tytul}}</td>
+          <td>{{book.autor}}</td>
+          <td>{{book.kategoria}}</td>
           <td [routerLink] = "['/edycja',book.id]"><a class="mouse">o</a></td>
           <td (click) = "usun(book.id)"><a class="mouse">X</a></td>
       </tr>

@@ -24,7 +24,10 @@ export class EdycjaComponent implements OnInit {
   {
     this.ksiazkaObj = 
     {
-      "tytul": ksiazka.tytul
+      "tytul": ksiazka.tytul,
+      "autor": ksiazka.autor,
+      "kategoria": ksiazka.kategoria
+
     };
 
     const url = `${"http://localhost:5555/ksiazka"}/${this.id}`;
